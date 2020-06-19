@@ -1,0 +1,23 @@
+@import './_functions';
+
+@mixin bg-image($color, $url, $repeat, $size, $position) {
+  background-color: $color;
+  background-image: url($url);
+  background-repeat: $repeat;
+  background-size: $size;
+  background-position: $position;
+}
+
+@mixin flex($justify-content, $align-items, $direction: unset) {
+  display: flex;
+  justify-content: $justify-content;
+  align-items: $align-items;
+
+  @if $direction != unset {
+    flex-direction: $direction;
+  }
+}
+
+@mixin z-index($key) {
+  z-index: z-index($key);
+}
