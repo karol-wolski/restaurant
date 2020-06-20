@@ -8,7 +8,7 @@
     "autoprefixer": "postcss -u autoprefixer -r dist/css/*",
     "lint": "eslint src/js",
     "uglify": "npx mkdirp dist/js && uglifyjs src/js/script.js --compress --mangle --warn --output dist/js/script.js",
-    "imagemin": "imagemin src/images dist/images -p",
+    "imagemin": "imagemin src/images/* --out-dir=dist/images -p",
     "build:html": "copyfiles -f ./src/index.html dist",
     "build:css": "npm run scss && npm run autoprefixer",
     "build:js": "npm run lint && npm run uglify",

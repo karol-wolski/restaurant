@@ -1,0 +1,58 @@
+@import './_fonts';
+@import './_colours';
+@import './mixins';
+
+.main-slide {
+  height: 100vh;
+  @include bg-image($bg-dark, '../images/slide.jpg', no-repeat, cover, center);
+  @include flex(center, center);
+
+  &::after {
+    content: '';
+    display: block;
+    height: 100vh;
+    background-color: $bg-shading;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    @include z-index(main-slide-bg-shading);
+  }
+
+  &__container {
+    @include flex(center, center, column);
+    padding: 0 1.5rem;
+    @include z-index(main-slide-container);
+  }
+
+  &__title {
+    font-size: 6rem;
+    font-weight: $fRegular;
+    color: $base;
+    text-align: center;
+    margin-top: 4rem;
+
+    @media (min-width: 640px) {
+      font-size: 7rem;
+    }
+
+    @media (min-width: 960px) {
+      font-size: 9.6rem;
+    }
+  }
+
+  &__subtitle {
+    font-size: 6.4rem;
+    font-weight: $fRegular;
+    color: $base;
+
+    &::after {
+      content: '';
+      display: block;
+      border-bottom: 1rem solid $base;
+      width: 100px;
+      margin: 0 auto;
+      padding-top: 3rem;
+    }
+  }
+}
