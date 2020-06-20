@@ -4,7 +4,7 @@
   "description": "This is restaurant website.",
   "main": "index.js",
   "scripts": {
-    "scss": "node-sass --output-style compressed -o dist/css src/scss",
+    "scss": "node-sass --output-style compressed -o dist/css src/scss/style.scss",
     "autoprefixer": "postcss -u autoprefixer -r dist/css/*",
     "lint": "eslint src/js",
     "uglify": "npx mkdirp dist/js && uglifyjs src/js/script.js --compress --mangle --warn --output dist/js/script.js",
