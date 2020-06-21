@@ -1,0 +1,43 @@
+@import './_fonts';
+.about-us {
+  padding: 10rem 0 5rem 0;
+
+  &__title {
+    font-size: 4.8rem;
+    font-weight: $fLight;
+    text-align: center;
+  }
+
+  &__container {
+    @include flex(space-around, center, column);
+    padding-top: 10rem;
+
+    @media (min-width: 768px) {
+      flex-direction: row;
+    }
+  }
+
+  &__desc {
+    font-size: 1.6rem;
+    font-weight: $fLight;
+    width: 42.5rem;
+    max-width: 100%;
+    text-align: center;
+    line-height: 1.6;
+  }
+
+  &__image {
+    display: none;
+    width: 37.2rem;
+    height: 47.5rem;
+
+    @media (min-width: 768px) {
+      display: block;
+      padding-left: 3rem;
+    }
+
+    @media (min-width: 1024px) {
+      padding-left: 0;
+    }
+  }
+}
