@@ -21,3 +21,13 @@
 @mixin z-index($key) {
   z-index: z-index($key);
 }
+
+@mixin font($size, $weight: null, $style: null) {
+  font-size: $size;
+  @if $weight != null {
+    font-weight: $weight;
+  }
+  @if $style != null {
+    font-style: $style;
+  }
+}
