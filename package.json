@@ -7,11 +7,10 @@
     "scss": "node-sass --output-style compressed -o dist/css src/scss/style.scss",
     "autoprefixer": "postcss -u autoprefixer -r dist/css/*",
     "lint": "eslint src/js",
-    "uglify": "npx mkdirp dist/js && uglifyjs src/js/script.js --compress --mangle --warn --output dist/js/script.js",
     "imagemin": "imagemin src/images/* --out-dir=dist/images -p",
     "build:html": "copyfiles -f ./src/index.html dist",
     "build:css": "npm run scss && npm run autoprefixer",
-    "build:js": "npm run lint && npm run uglify",
+    "build:js": "npm run lint && copyfiles -f ./src/js/* dist/js",
     "build:images": "npm run imagemin",
     "build:all": "npm run build:html && npm run build:css && npm run build:js && npm run build:images",
     "serve": "browser-sync dist -w",
@@ -43,9 +42,8 @@
     "imagemin-cli": "^6.0.0",
     "node-sass": "^4.14.1",
     "onchange": "^7.0.2",
-    "parallelshell": "^3.0.1",
+    "parallelshell": "3.0.1",
     "postcss-cli": "^7.1.1",
-    "prettier": "2.0.5",
-    "uglify-js": "^3.9.4"
+    "prettier": "2.0.5"
   }
 }

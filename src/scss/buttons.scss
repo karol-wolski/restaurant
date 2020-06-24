@@ -1,0 +1,24 @@
+@import './_colours';
+@import './_fonts';
+
+.btn {
+  border: none;
+  background-color: transparent;
+  cursor: pointer;
+
+  &__text {
+    text-transform: uppercase;
+    color: $bg-shading;
+    padding: 0.5rem 1.5rem;
+    outline-color: $accent;
+    font-size: 1.8rem;
+
+    &:hover {
+      color: $accent;
+    }
+
+    &--active {
+      color: $accent;
+    }
+  }
+}
