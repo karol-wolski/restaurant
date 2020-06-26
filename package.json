@@ -11,13 +11,14 @@
     "build:html": "copyfiles -f ./src/index.html dist",
     "build:css": "npm run scss && npm run autoprefixer",
     "build:js": "npm run lint && copyfiles -f ./src/js/* dist/js",
-    "build:images": "npm run imagemin",
+    "build:images": "copyfiles -f ./src/images/* dist/images && npm run imagemin",
     "build:all": "npm run build:html && npm run build:css && npm run build:js && npm run build:images",
     "serve": "browser-sync dist -w",
     "watch:html": "onchange \"src/index.html\" -- npm run build:html",
     "watch:css": "onchange \"src/scss/*.scss\" -- npm run build:css",
     "watch:js": "onchange \"src/js/*.js\" -- npm run build:js",
-    "watch:all": "parallelshell \"npm run serve\" \"npm run watch:html\" \"npm run watch:css\" \"npm run watch:js\"",
+    "watch:images": "onchange \"src/images/\" -- npm run build:images",
+    "watch:all": "parallelshell \"npm run serve\" \"npm run watch:html\" \"npm run watch:css\" \"npm run watch:js\" \"npm run watch:images\"",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
