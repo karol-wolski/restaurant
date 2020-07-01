@@ -1,0 +1,13 @@
+@import './_mixins';
+@import './_colours';
+@import './_fonts';
+
+.social-media {
+  @include flex(space-between, center);
+  list-style: none;
+  width: 7rem;
+
+  &__icon {
+    height: 1.8rem;
+  }
+}

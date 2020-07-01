@@ -1,0 +1,184 @@
+@import './_mixins';
+@import './_colours';
+@import './_fonts';
+
+.contact {
+  @include bg-image(
+    $bg-dark,
+    '../images/contact.jpg',
+    no-repeat,
+    cover,
+    center
+  );
+  padding: 5rem 0;
+
+  &__title {
+    @include font(4.8rem, $fLight);
+    text-align: center;
+    padding-bottom: 2.5rem;
+    color: $base;
+  }
+
+  &__container {
+    @include flex(space-between, center, column);
+    width: 120rem;
+    max-width: 100%;
+    padding: 0 1.5rem;
+    margin: 0 auto;
+
+    @media (min-width: 1024px) {
+      flex-direction: row;
+    }
+  }
+
+  &__column {
+    @include flex(center, center, column);
+    width: 58.5rem;
+    max-width: 100%;
+  }
+
+  &__tile {
+    @include flex(space-around, flex-start);
+    background-color: $tile;
+    padding: 3rem;
+    position: relative;
+    width: 57rem;
+    max-width: 100%;
+
+    @media (min-width: 1024px) {
+      justify-content: space-between;
+      width: 37rem;
+    }
+
+    &--column {
+      @include flex(center, center, column);
+    }
+
+    &::before {
+      content: '';
+      border: 2px solid $accent;
+      position: absolute;
+      top: 0.5rem;
+      right: 0.5rem;
+      bottom: 0.5rem;
+      left: 0.5rem;
+    }
+  }
+
+  &__address {
+    margin-bottom: 3rem;
+    div {
+      h3 {
+        @include font(1.8rem, $fRegular);
+        padding-bottom: 1.5rem;
+      }
+
+      address,
+      a {
+        @include font(1.4rem, $fLight);
+        color: $base-dark;
+        text-decoration: none;
+      }
+
+      a:focus {
+        outline-color: $accent;
+      }
+    }
+    div + div > div {
+      &:first-child {
+        padding-bottom: 3rem;
+      }
+    }
+  }
+
+  &__hours {
+    @media (max-width: 1024px) {
+      margin-bottom: 3rem;
+    }
+
+    h3 {
+      @include font(1.8rem, $fRegular);
+      padding-bottom: 1.5rem;
+    }
+
+    & > div {
+      @include flex(space-around, center);
+      width: 100%;
+
+      @media (min-width: 1024px) {
+        justify-content: space-between;
+      }
+
+      & > div {
+        h4 {
+          @include font(1.4rem, $fBold);
+        }
+        p {
+          @include font(1.4rem, $fLight);
+        }
+      }
+    }
+  }
+}
+
+.form-contact {
+  @include flex(space-between, center, column);
+  background-color: $tile;
+  padding: 3rem;
+  position: relative;
+  width: 57rem;
+  max-width: 100%;
+
+  &::before {
+    content: '';
+    border: 2px solid $accent;
+    position: absolute;
+    top: 0.5rem;
+    right: 0.5rem;
+    bottom: 0.5rem;
+    left: 0.5rem;
+  }
+
+  &__container {
+    @include flex(space-between, center, column);
+    width: 100%;
+
+    @media (min-width: 768px) {
+      flex-direction: row;
+      div:first-child {
+        margin-right: 2rem;
+      }
+    }
+  }
+
+  &__group {
+    @include flex(space-between, flex-start, column);
+    width: 100%;
+    height: max-content;
+    padding-bottom: 1.5rem;
+    z-index: 1;
+  }
+
+  &__field {
+    height: 5rem;
+    width: 100%;
+    background-color: $grey;
+    border: none;
+    @include font(1.8rem, $fLight);
+    padding: 0 1rem;
+    margin-top: 0.5rem;
+
+    &:focus {
+      outline-color: $accent;
+    }
+
+    &--textarea {
+      resize: none;
+      height: 15rem;
+    }
+  }
+
+  &__label {
+    @include font(1.6rem, $fLight);
+  }
+}
