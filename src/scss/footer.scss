@@ -1,0 +1,25 @@
+@import './_mixins';
+@import './_colours';
+@import './_fonts';
+@import './global';
+
+.footer {
+  padding: 4rem 0;
+  background-color: $base-dark;
+
+  &__container {
+    @extend .container;
+    @include flex(space-between, center, column);
+    @media (min-width: 640px) {
+      flex-direction: row;
+    }
+  }
+
+  &__text {
+    color: $base;
+    @include font(1.4rem, $fLight);
+    @media (max-width: 640px) {
+      margin-bottom: 1.5rem;
+    }
+  }
+}

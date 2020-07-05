@@ -1,5 +1,6 @@
 @import './_colours';
 @import './_fonts';
+@import './_mixins';
 
 .btn {
   border: none;
@@ -19,6 +20,18 @@
 
     &--active {
       color: $accent;
+    }
+  }
+
+  &__contained {
+    @include font(1.8rem, $fMedium);
+    background-color: $accent;
+    color: $base;
+    padding: 1.6rem 4rem;
+    z-index: 1;
+
+    &:hover {
+      background-color: $red;
     }
   }
 }
