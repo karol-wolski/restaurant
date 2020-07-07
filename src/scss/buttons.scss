@@ -34,4 +34,15 @@
       background-color: $red;
     }
   }
+
+  &__outlined {
+    @include font(1.8rem, $fBold);
+    border: 2px solid $red;
+    padding: 1.5rem;
+    color: $base;
+
+    &:hover {
+      background-color: $red;
+    }
+  }
 }
