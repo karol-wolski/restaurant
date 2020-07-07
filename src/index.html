@@ -10,6 +10,26 @@
 </head>
 
 <body>
+  <nav class="navigation">
+    <button name="menu" id="menu-toggle" class="hamburger" aria-label="Mobile menu">
+      <span class="hamburger__line"></span>
+      <span class="hamburger__line"></span>
+      <span class="hamburger__line"></span>
+    </button>
+    <div class="navigation__container">
+      <a href="#home">
+        <img src="./images/logo.png" alt="">
+      </a>
+      <ul id="nav" class="nav">
+        <li class="nav__item"><a href="#home" class="nav__link">Home</a></li>
+        <li class="nav__item"><a href="#about-us" class="nav__link">About</a></li>
+        <li class="nav__item"><a href="#menu" class="nav__link">Menu</a></li>
+        <li class="nav__item"><a href="#gallery" class="nav__link">Gallery</a></li>
+        <li class="nav__item"><a href="#contact" class="nav__link">Contact</a></li>
+        <li class="nav__item"><button class="btn btn__outlined">Book a table</button></li>
+      </ul>
+  </nav>
+  </div>
   <section id="main-slide" class="main-slide">
     <div class="main-slide__container">
       <p class="main-slide__subtitle">
@@ -49,7 +69,7 @@
       </div>
     </section>
 
-    <section class="menu-card">
+    <section id="menu" class="menu-card">
       <h2 class="menu-card__title">
         Menu a la Carte
       </h2>
@@ -208,7 +228,7 @@
         </div>
     </section>
 
-    <section class="gallery">
+    <section id="gallery" class="gallery">
       <h2 class="gallery__title">
         Our dishes
       </h2>
@@ -253,7 +273,7 @@
     </section>
   </div>
 
-  <section class="contact">
+  <section id="contact" class="contact">
     <h2 class="contact__title">
       Contact
     </h2>
