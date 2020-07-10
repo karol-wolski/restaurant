@@ -1,0 +1,376 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Restaurant</title>
+  <meta name="description" content="Cafe & Restaurant - the best place in town">
+  <link rel="stylesheet" href="./css/style.css">
+</head>
+
+<body>
+  <nav class="navigation">
+    <button name="menu" id="menu-toggle" class="hamburger" aria-label="Mobile menu">
+      <span class="hamburger__line"></span>
+      <span class="hamburger__line"></span>
+      <span class="hamburger__line"></span>
+    </button>
+    <div class="navigation__container">
+      <a href="#home">
+        <img src="./images/logo.png" alt="">
+      </a>
+      <ul id="nav" class="nav">
+        <li class="nav__item"><a href="#home" class="nav__link">Home</a></li>
+        <li class="nav__item"><a href="#about-us" class="nav__link">About</a></li>
+        <li class="nav__item"><a href="#menu" class="nav__link">Menu</a></li>
+        <li class="nav__item"><a href="#gallery" class="nav__link">Gallery</a></li>
+        <li class="nav__item"><a href="#contact" class="nav__link">Contact</a></li>
+        <li class="nav__item"><button id="book-table" class="btn btn__outlined">Book a table</button></li>
+      </ul>
+  </nav>
+  </div>
+  <section id="main-slide" class="main-slide">
+    <div class="main-slide__container">
+      <p class="main-slide__subtitle">
+        Welcome
+      </p>
+      <h1 class="main-slide__title">
+        Cafe & Restaurant
+      </h1>
+    </div>
+  </section>
+
+  <div class="container">
+    <section id="about-us" class="about-us">
+      <h2 class="about-us__title">
+        About us
+      </h2>
+      <div class="about-us__container">
+        <p class="about-us__desc">
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+          Curabitur a dui id lacus varius sollicitudin. <br>
+          Morbi vel justo et dui ornare venenatis vel porttitor nulla. <br>
+          Vestibulum id vulputate turpis. <br>
+          Fusce ut porttitor neque, ornare luctus massa. <br>
+          Nunc varius lorem id dolor feugiat bibendum. <br>
+          Nunc aliquet id turpis at consequat. <br>
+          Nulla condimentum rhoncus elit sed fermentum. <br>
+          Nullam scelerisque, mauris nec viverra ullamcorper, leo leo
+          bibendum mi, in vehicula risus mauris placerat dui. Mauris et
+          est vitae purus consequat finibus. Vestibulum eu nulla nunc.
+          Vivamus at est convallis, eleifend nisl ac, aliquam sapien.
+          Phasellus sed augue auctor, porta arcu elementum, feugiat
+          felis. Curabitur consectetur, nibh sed tempus laoreet, ante
+          sem venenatis nulla, eu ultrices purus neque at velit. Mauris
+          congue ligula ut mattis fermentum.
+        </p>
+        <img class="about-us__image" src="./images/chef.jpg" alt="Head of the restaurant">
+      </div>
+    </section>
+
+    <section id="menu" class="menu-card">
+      <h2 class="menu-card__title">
+        Menu a la Carte
+      </h2>
+      <p class="menu-card__desc">
+        Amet ex quis adipisicing quis ex officia reprehenderit.
+        Et magna reprehenderit mollit minim sit deserunt excepteur.
+        Consectetur esse duis nostrud nulla Lorem.
+      </p>
+      <ul class="menu-card__nav">
+        <li class="menu-card__nav-item">
+          <button class="btn btn__text btn__text--active" data-filter="starter">
+            Starter
+          </button>
+        </li>
+        <li class="menu-card__nav-item">
+          <button class="btn btn__text" data-filter="main-dishes">
+            Main dishes
+          </button>
+        </li>
+        <li class="menu-card__nav-item">
+          <button class="btn btn__text" data-filter="soups">
+            Soups
+          </button>
+        </li>
+        <li class="menu-card__nav-item">
+          <button class="btn btn__text" data-filter="desserts">
+            Desserts
+          </button>
+        </li>
+        <li class="menu-card__nav-item">
+          <button class="btn btn__text" data-filter="drinks">
+            Drinks
+          </button>
+        </li>
+      </ul>
+
+      <div class="menu-card__dish">
+        <div class="menu-card__dish-item menu-card__dish-item--active starter">
+          <h3 class="menu-card__dish-name">Mushroom bruschetta</h3>
+          <span class="menu-card__dish-price">$11.00</span>
+          <p class="menu-card__dish-products">bread, garlic, mushrooms,, zucchini, olives</p>
+        </div>
+        <div class="menu-card__dish-item starter">
+          <h3 class="menu-card__dish-name">Garlic baked cheese</h3>
+          <span class="menu-card__dish-price">$12.00</span>
+          <p class="menu-card__dish-products">finnish squeaky cheese, eggplant conserva, black pepper</p>
+        </div>
+        <div class="menu-card__dish-item starter">
+          <h3 class="menu-card__dish-name">Tomato bruschetta</h3>
+          <span class="menu-card__dish-price">$9.00</span>
+          <p class="menu-card__dish-products">tomatoes, olive oil, cheese</p>
+        </div>
+        <div class="menu-card__dish-item starter">
+          <h3 class="menu-card__dish-name">Baked potato skins</h3>
+          <span class="menu-card__dish-price">$8.50</span>
+          <p class="menu-card__dish-products">potatoes, oil, garlic</p>
+        </div>
+        <div class="menu-card__dish-item starter">
+          <h3 class="menu-card__dish-name">Tuna bruschetta</h3>
+          <span class="menu-card__dish-price">$10.50</span>
+          <p class="menu-card__dish-products">bread, garlic, tomatoes, tuna, capers</p>
+        </div>
+        <div class="menu-card__dish-item starter">
+          <h3 class="menu-card__dish-name">Avocado & Mango salsa</h3>
+          <span class="menu-card__dish-price">$6.50</span>
+          <p class="menu-card__dish-products">avocado, mango, tomatoes</p>
+        </div>
+        <!-- 
+          Main Dishes
+         -->
+        <div class="menu-card__dish-item main-dishes">
+          <h3 class="menu-card__dish-name">Southern Pot Roast</h3>
+          <span class="menu-card__dish-price">$9.00</span>
+          <p class="menu-card__dish-products">carrot, onion, garlic, chuck pot roast, rosemary, salt, pepper</p>
+        </div>
+        <div class="menu-card__dish-item main-dishes">
+          <h3 class="menu-card__dish-name">Crockpot Chicken and Dumplings</h3>
+          <span class="menu-card__dish-price">$8.50</span>
+          <p class="menu-card__dish-products">potatoes, carrots, onions, pepper, salt, garlic</p>
+        </div>
+        <div class="menu-card__dish-item main-dishes">
+          <h3 class="menu-card__dish-name">Meatball Stew En Casserole</h3>
+          <span class="menu-card__dish-price">$10.50</span>
+          <p class="menu-card__dish-products">onions, pepper, salt, garlic, Parmesan cheese</p>
+        </div>
+        <div class="menu-card__dish-item menu-card__dish-item--active main-dishes">
+          <h3 class="menu-card__dish-name">Chicken Carbonara</h3>
+          <span class="menu-card__dish-price">$6.50</span>
+          <p class="menu-card__dish-products">pasta, chicken, garlic</p>
+        </div>
+        <!-- 
+          Soups
+         -->
+        <div class="menu-card__dish-item menu-card__dish-item--active soups">
+          <h3 class="menu-card__dish-name">Lentil soup</h3>
+          <span class="menu-card__dish-price">$11.00</span>
+          <p class="menu-card__dish-products">veggie soup with red lentils, carrots and leeks</p>
+        </div>
+        <div class="menu-card__dish-item soups">
+          <h3 class="menu-card__dish-name">Carrot and orange soup</h3>
+          <span class="menu-card__dish-price">$12.00</span>
+          <p class="menu-card__dish-products">onion, carrots, oranges, vegetable stock</p>
+        </div>
+        <div class="menu-card__dish-item soups">
+          <h3 class="menu-card__dish-name">Courgette and mint soup</h3>
+          <span class="menu-card__dish-price">$9.00</span>
+          <p class="menu-card__dish-products">onion, garlic, courgette, vegetable stock</p>
+        </div>
+        <div class="menu-card__dish-item soups">
+          <h3 class="menu-card__dish-name">Tomato, chipotle and rice soup</h3>
+          <span class="menu-card__dish-price">$8.50</span>
+          <p class="menu-card__dish-products">tomato, garlic, ginger, pepper, chilli, vegetable stock</p>
+        </div>
+        <!-- 
+          Desserts
+         -->
+        <div class="menu-card__dish-item desserts">
+          <h3 class="menu-card__dish-name">Peaches & Brie Grilled Cheese</h3>
+          <span class="menu-card__dish-price">$9.00</span>
+        </div>
+        <div class="menu-card__dish-item desserts">
+          <h3 class="menu-card__dish-name">Chocolate cake</h3>
+          <span class="menu-card__dish-price">$8.50</span>
+        </div>
+        <div class="menu-card__dish-item menu-card__dish-item--active desserts">
+          <h3 class="menu-card__dish-name">Cherry Clafoutis</h3>
+          <span class="menu-card__dish-price">$10.50</span>
+        </div>
+        <div class="menu-card__dish-item desserts">
+          <h3 class="menu-card__dish-name">Strawberry-Pretzel Tart
+          </h3>
+          <span class="menu-card__dish-price">$6.50</span>
+        </div>
+        <!-- 
+          Drinks
+         -->
+        <div class="menu-card__dish-item drinks">
+          <h3 class="menu-card__dish-name">Cosmopolitan</h3>
+          <span class="menu-card__dish-price">$11.00</span>
+          <p class="menu-card__dish-products">vodka, lime juice, cranberry juice</p>
+        </div>
+        <div class="menu-card__dish-item menu-card__dish-item--active drinks">
+          <h3 class="menu-card__dish-name">Tequila Sunrise</h3>
+          <span class="menu-card__dish-price">$12.00</span>
+          <p class="menu-card__dish-products">tequila, orange juice, cherry, orange slice</p>
+        </div>
+        <div class="menu-card__dish-item drinks">
+          <h3 class="menu-card__dish-name">Cafe</h3>
+          <span class="menu-card__dish-price">$9.00</span>
+          <p class="menu-card__dish-products">Espresso, Cappuccino, Late</p>
+        </div>
+        <div class="menu-card__dish-item drinks">
+          <h3 class="menu-card__dish-name">Tea</h3>
+          <span class="menu-card__dish-price">$8.50</span>
+          <p class="menu-card__dish-products">green, black, white</p>
+        </div>
+    </section>
+
+    <section id="gallery" class="gallery">
+      <h2 class="gallery__title">
+        Our dishes
+      </h2>
+      <div class="gallery__items">
+        <div class="gallery__item">
+          <img src="./images/1.png" alt="Dish 1" class="gallery__image">
+          <div class="gallery__item-hover">
+            <span></span>
+          </div>
+        </div>
+        <div class="gallery__item">
+          <img src="./images/2.png" alt="Dish 2" class="gallery__image">
+          <div class="gallery__item-hover">
+            <span></span>
+          </div>
+        </div>
+        <div class="gallery__item">
+          <img src="./images/3.png" alt="Dish 3" class="gallery__image">
+          <div class="gallery__item-hover">
+            <span></span>
+          </div>
+        </div>
+        <div class="gallery__item">
+          <img src="./images/4.png" alt="Dish 4" class="gallery__image">
+          <div class="gallery__item-hover">
+            <span></span>
+          </div>
+        </div>
+        <div class="gallery__item">
+          <img src="./images/5.png" alt="Dish 5" class="gallery__image">
+          <div class="gallery__item-hover">
+            <span></span>
+          </div>
+        </div>
+        <div class="gallery__item">
+          <img src="./images/6.png" alt="Dish 6" class="gallery__image">
+          <div class="gallery__item-hover">
+            <span></span>
+          </div>
+        </div>
+      </div>
+    </section>
+  </div>
+
+  <section id="contact" class="contact">
+    <h2 class="contact__title">
+      Contact
+    </h2>
+    <div class="contact__container">
+      <div class="contact__column">
+        <div class="contact__tile contact__address">
+          <div>
+            <h3>Address:</h3>
+            <address>
+              740 Park Ave <br>
+              New York, NY 10021 <br>
+              USA
+            </address>
+          </div>
+          <div>
+            <div>
+              <h3>Telephone:</h3>
+              <a href="tel:1234567890">123 - 456 - 7890</a>
+            </div>
+            <div>
+              <h3>Email:</h3>
+              <a href="mailto:contact@mail.com">contact@mail.com</a>
+            </div>
+          </div>
+        </div>
+        <div class="contact__tile contact__tile--column contact__hours">
+          <h3 class="contact__hours-title">
+            Hours
+          </h3>
+          <div>
+            <div>
+              <h4>Monday - Saturday</h4>
+              <p>Lunch: 11AM - 1PM</p>
+              <p>Dinner: 1PM - 10PM</p>
+            </div>
+            <div>
+              <h4>Sunday</h4>
+              <p>Lunch: 11AM - 1PM</p>
+              <p>Dinner: 1PM - 8PM</p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="contact__column">
+        <form action="#" class="form-contact">
+          <div class="form-contact__container">
+            <div class="form-contact__group">
+              <label class="form-contact__label" for="name">Name *</label>
+              <input class="form-contact__field" id="name" name="name" type="text">
+            </div>
+            <div class="form-contact__group">
+              <label class="form-contact__label" for="telephone">Telephone *</label>
+              <input class="form-contact__field" id="name" name="telephone" type="tel">
+            </div>
+          </div>
+          <div class="form-contact__group">
+            <label class="form-contact__label" for="email">Email *</label>
+            <input class="form-contact__field" id="name" name="email" type="email">
+          </div>
+          <div class="form-contact__group">
+            <label class="form-contact__label" for="message">How can I help you?*</label>
+            <textarea class="form-contact__field form-contact__field--textarea" cols="60" id="message" name="message"
+              rows="40"></textarea>
+          </div>
+          <button class="btn btn__contained" id="sendForm" type="submit">Send</button>
+        </form>
+      </div>
+    </div>
+  </section>
+
+  <footer class="footer">
+    <div class="footer__container">
+      <p class="footer__text">
+        Copyright © 2020. All Rights Reserved.
+      </p>
+      <ul class="social-media">
+        <li class="social-media__item">
+          <a href="#" class="social-media__link">
+            <img class="social-media__icon" src="./images/facebook-f-brands.svg" alt="" srcset="">
+          </a>
+        </li>
+        <li class="social-media__item">
+          <a href="#" class="social-media__link">
+            <img class="social-media__icon" src="./images/instagram-brands.svg" alt="" srcset="">
+          </a>
+        </li>
+        <li class="social-media__item">
+          <a href="#" class="social-media__link">
+            <img class="social-media__icon" src="./images/twitter-brands.svg" alt="" srcset="">
+          </a>
+        </li>
+      </ul>
+    </div>
+  </footer>
+
+</body>
+
+<script type="module" src="./js/script.js"></script>
+
+</html>
