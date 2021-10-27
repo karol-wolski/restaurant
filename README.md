@@ -3,13 +3,14 @@
 This is a simple restaurant page.
 [Demo](https://karol-wolski.github.io/restaurant/)
 
-## Run
-
-`npm run watch:all`
-
 ## Build
 
 `npm run build:all`
+
+## Run
+
+`npm run build:all`
+`npm run watch:all`
 
 ## Images
 
@@ -29,5 +30,5 @@ This is a simple restaurant page.
 ## Technologies
 
 - HTML
-- CSS
+- CSS (SCSS)
 - JavaScript
