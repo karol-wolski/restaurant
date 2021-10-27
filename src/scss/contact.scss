@@ -140,7 +140,7 @@
   }
 
   &__container {
-    @include flex(space-between, center, column);
+    @include flex(space-between, flex-start, column);
     width: 100%;
 
     @media (min-width: 768px) {
@@ -175,10 +175,21 @@
     &--textarea {
       resize: none;
       height: 15rem;
+      padding: 1rem;
     }
   }
 
   &__label {
     @include font(1.6rem, $fLight);
+  }
+
+  &__error {
+    @include font(1.2rem, $fLight);
+    margin-top: 0.5rem;
+    border: 1px solid $red;
+    background-color: lighten($red, 0.3);
+    padding: 1rem;
+    width: 100%;
+    color: $base;
   }
 }
